@@ -1,0 +1,132 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    color: white; 
+}
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+#title {
+    text-align: center;
+    margin-bottom: 0.5%;
+    padding: 0.5%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.navbar {
+    margin-bottom: 1%;
+}
+
+.nav {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btns1, .btns2, .btns3 {
+    border: 3px solid white;
+    width: fit-content;
+    background-color: rgba(117, 170, 177, 0.8); 
+    color: white;
+    cursor: pointer;
+    list-style-type: none;
+    margin-left: 2%;
+    padding: 1% 2.5%;
+    transform: skew(5deg);
+}
+
+#card, #Gallery, #achievements-card {
+    background-color: rgba(229, 219, 206, 0.825); 
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    max-width: 75%;
+    height: 65%;
+    display: flex;
+    flex-direction: row;
+    margin: auto auto;
+    color: black; 
+}
+
+#Gallery, #achievements-card {
+    display: none;
+}
+
+#img-div {
+    border: 5px solid #8893c6;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#image {
+    max-width: 100%;
+    min-width: 100%; 
+    height: 100%; 
+}
+
+#img-caption {
+    text-align: center;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#About, #achievements {
+    width: 60%;
+    height: 100%;
+    padding-top: 2.5%;
+}
+
+#About-title, #achievements-title {
+    text-align: center;
+}
+
+#About-info, #achievement-info {
+    text-align: justify;
+    margin: 2%;
+    font-size: larger;
+}
+
+.list {
+    margin: 2%;
+    font-size: larger;
+}
+
+#tribute {
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+#tribute-link {
+    margin-left: 1%;
+}
